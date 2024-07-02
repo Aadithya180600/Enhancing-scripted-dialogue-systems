@@ -1,7 +1,7 @@
 import openai
 
 # Set your API key here
-openai.api_key = "sk-proj-m654ueDo3URP0ibr32vVT3BlbkFJM2LfYU7BIzpM31LFZAeL"
+openai.api_key = "OPENAI-API-KEY"
 
 # Define the prompts you want to use
 prompt = "For the following instruction, For the given message, generate a response in JSON format that includes the following information: \
@@ -18,7 +18,7 @@ prompt = "For the following instruction, For the given message, generate a respo
 # Function to generate responses from ChatGPT
 def get_responses(prompt, instruction):
     response = openai.chat.completions.create(
-        model="gpt-3.5-turbo",  # You can use other models like text-davinci-002
+        model="gpt-3.5-turbo",
         messages=[{"role": "system", "content": prompt},
                   {"role": "user", "content": instruction},],
     ) 
