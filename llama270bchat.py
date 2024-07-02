@@ -174,3 +174,6 @@ if len(sys.argv) > 1:
     llama2_70b_chat_5_shot(args, model, tokenizer)
 else:
     print("No command line arguments provided.")
+
+## Examples to use this
+# python llama270bchat.py "I want to walk between 8000 to 9000 every week day" "Let us up for 10000" "May be I can go for 9000"
