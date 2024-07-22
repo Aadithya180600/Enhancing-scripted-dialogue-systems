@@ -41,3 +41,9 @@ python llama270bchat.py "My goal for this weekend is 4000 steps."
 ```
 This will automatically download the model, which is around 70GB in size, for the first time and use it for the following runs.
 <br>Alternatively, you can download and use the model directly from Hugging Face to your system. [LLaMA-2-70B-Chat](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf).
+
+### Gemma 7B
+Gemma's experiments are recorded in `gemma7bchat.ipynb` file.
+<br>The experiments in the notebook were executed using Apple's MLX framework.
+<br>Alternatively, one can replace the prompt and model name in any of the above two files and execute them manually.
+<br> Hugging face Gemma manual installation [Gemma-7B-Instruct](https://huggingface.co/google/gemma-7b-it)
