@@ -47,3 +47,9 @@ Gemma's experiments are recorded in `gemma7bchat.ipynb` file.
 <br>The experiments in the notebook were executed using Apple's MLX framework.
 <br>Alternatively, one can replace the prompt and model name in any of the above two files and execute them manually.
 <br> Hugging face Gemma manual installation [Gemma-7B-Instruct](https://huggingface.co/google/gemma-7b-it)
+
+### GPT
+To experiment using GPT,
+openAI package needs to be installed `pip install openai`
+<br>Also, OpenAI API should be purchased and access token needs to be generated.
+Once the token is generated, simply run the `Gpt.py` file to experiment using ChatGPT. <br>For inputs, update the instruction variable with the new input in the file.
