@@ -164,7 +164,8 @@ if len(sys.argv) > 1:
     # Remove the script name from the arguments
     args = sys.argv[1:]
 
-    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-70b-chat-hf")
+    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-70b-chat-hf") // This will download the model for the first time and run automatically from 2nd time.
+        // Alternatively, the LLM folder name from the internal storage can be passed as a parameter.
     model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-70b-chat-hf")
     
     # Pass the arguments to the method
