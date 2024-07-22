@@ -8,8 +8,8 @@ This thesis investigates the feasibility and effectiveness of integrating large 
 
 Requirements:
 Python [python](https://www.python.org/downloads)
-Huggingface `pip install huggingface-hub`
-[Huggingface Login](https://huggingface.co/docs/huggingface_hub/en/guides/cli)
+Huggingface `pip install huggingface-hub`.
+<br>[Huggingface Login](https://huggingface.co/docs/huggingface_hub/en/guides/cli)
 Transformers `pip install transformers`
 
 For Apple Users, MLX can also be used. Follow this link for installation and usage. [MLX](https://github.com/ml-explore/mlx).
@@ -18,11 +18,26 @@ For Apple Users, MLX can also be used. Follow this link for installation and usa
 To run the pattern matching functions code, execute `RegExCode.py` file.
 
 ## LLMs
-ChatGPT API and three different open-source LLMs were used in the research. All the experiments were recorded in their respective files.
+The research used ChatGPT API and three different open-source LLMs. All the experiments were recorded in their respective files.
 
 ### LLaMA 2 7B
-To Experiment with the LLama 2 7B model, use the `llama27BChathf.py` file.
+To Experiment with the LLama 2 7B model, use the `llama27BChathf.py` file and pass the inputs as command line arguments.
+<br>
+For example,
+```
+python llama27BChathf.py "My goal is to walk 10000 steps every day"
+```
+It will also take more than one input.
+```
+python llama27BChathf.py "My goal is to walk 10000 steps every day" "I wanna walk 2K steps on weekdays"
+```
 This will automatically download the model, which is around 30GB in size, for the first time and use it for the following runs.
-Alternatively, you can download and use the model directly from Hugging Face to your system. [LLaMA-2-7B-Chat](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
+<br>Alternatively, you can download and use the model directly from Hugging Face to your system. [LLaMA-2-7B-Chat](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
 
 ### LLaMA 2 70B
+To run this, use the `llama270bchat.py` file and enter the inputs as command line arguments.
+```
+python llama270bchat.py "My goal for this weekend is 4000 steps."
+```
+This will automatically download the model, which is around 70GB in size, for the first time and use it for the following runs.
+<br>Alternatively, you can download and use the model directly from Hugging Face to your system. [LLaMA-2-70B-Chat](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf).
