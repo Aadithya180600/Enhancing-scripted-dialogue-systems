@@ -1,0 +1,70 @@
+title: Start
+speaker: Coach
+position: -416,112
+color: red
+---
+Hello Robin
+[[Hello|newNode1]]
+[[Exit|End]]
+===
+title: newNode1
+speaker: Coach
+position: -416,112
+color: red
+---
+How many steps you want to walk?
+[[<<input type="text" value="$input">>|newNode2]]
+[[Exit|End]]
+===
+title: End
+speaker: Coach
+position: -416,112
+color: red
+---
+
+===
+title: newNode2
+speaker: Coach
+position: -416,112
+color: red
+---
+Okay let's start walking 2000 steps from today
+[[Okayy!|NewNode3]]
+[[Exit|End]]
+===
+title: newNode3
+speaker: Coach
+position: -416,112
+color: red
+---
+You have walked 8000 steps today. That's better than your daily goal. Great job
+[[Thank you|newNode4]]
+[[Exit|End]]
+===
+title: newNode4
+speaker: Coach
+position: -416,112
+color: red
+---
+Do you want to change your daily goal?
+[[Yes|changeGoal]]
+[[No|NewNode5]]
+[[Exit|End]]
+===
+title: changeGoal
+speaker: Coach
+position: -416,112
+color: red
+---
+What is your new goal?
+[[Steps =  <<input type="text" value="$num_of_steps">>|newNode6]]
+[[Exit|End]]
+===
+title: newNode6
+speaker: Coach
+position: -416,112
+color: red
+---
+Okay let's start walking 10000 steps from today
+[[Exit|End]]
+===
