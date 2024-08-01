@@ -53,3 +53,21 @@ To experiment using GPT,
 openAI package needs to be installed `pip install openai`
 <br>Also, OpenAI API should be purchased and access token needs to be generated.
 Once the token is generated, simply run the `Gpt.py` file to experiment using ChatGPT. <br>For inputs, update the instruction variable with the new input in the file.
+
+
+# Using the Fine-Tuned model
+The open-source Llama2-7B model was fine-tuned using a synthetically generated dataset(Using ChatGPT-4).
+The model was available on Huggingface.
+Here is the link to the model: [Fine-Tuned Model](https://huggingface.co/Aadithya18/LLaMA2-7B-Chat_FinedTuned_with_health_coach_dataset)
+Here is the link to the Dataset: [Dataset](https://huggingface.co/datasets/Aadithya18/Health-Coaching_Dataset)
+
+## Using Fine-Tuned Model
+To use this model, Use the model name `Aadithya18/LLaMA2-7B-Chat_FinedTuned_with_health_coach_dataset` in the code.
+<br> Example usage with mlx<br>
+```
+!python3 -m mlx_lm.generate --model Aadithya18/LLaMA2-7B-Chat_FinedTuned_with_health_coach_dataset \
+    --max-tokens 2000 \
+    --prompt '<<SYS>> surround the answer in between <result> and </result> tags. <</SYS>>\
+              [INST]"9000 on Sat and Sun"[/INST]'\
+    --temp 0.1
+```
